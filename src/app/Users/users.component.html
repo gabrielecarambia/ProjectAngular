@@ -1,0 +1,19 @@
+<table>
+  <caption>
+    {{
+      title
+    }}
+  </caption>
+  <tr>
+    <th>Nome</th>
+    <th>Cognome</th>
+    <th>Email</th>
+    <th>Telefono</th>
+  </tr>
+  <tr *ngFor="let utente of utenti">
+    <td>{{ utente.nome }}</td>
+    <td>{{ utente.cognome }}</td>
+    <td>{{ utente.email }}</td>
+    <td>{{ utente.telefono }}</td>
+  </tr>
+</table>
